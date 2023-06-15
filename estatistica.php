@@ -45,7 +45,7 @@
 <body>
 
     <article class="articleConteudos">
-        <h2>Estatística  </h2>
+        <h2>Estatística</h2>
        
             <article class="articleEstatistica" id="EstatisticaBomEstado">
                 <h4 class="Titulo" > Bom estado</h4><i class="fa fa-check" id="IconBom"></i>

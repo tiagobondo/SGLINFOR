@@ -33,9 +33,6 @@
     <a href="#" class="linkNav" onclick="abrirModal()"> <i class="fa fa-computer" id="NavIcon"></i> Dados</a>
     <a href="sair.php" class="linkNav"> <i class="fa fa-outdent" id="NavIcon"></i> Sair </a>
 
-    <h6>
-        18/06/2023
-    </h6>
     
     <div class="janela-modal" id="janela-modal">
     <div class="modal1">
@@ -228,7 +225,8 @@ $update_material->bindParam(':Observacao', $Observacao1);
 if($update_material->execute()){
 echo "<div class='alert alert-success'>Dados Actualizado Com Sucesso!</div>";
 
-}else{
+}
+else{
 echo "<div class='alert alert-danger'>Houve um erro!</div>";
 
 }    
@@ -238,8 +236,6 @@ echo "<div class='alert alert-danger'>Houve um erro!</div>";
 
 
 }
-
-
 
 ?>
 
@@ -291,7 +287,22 @@ echo "<div class='alert alert-danger'>Houve um erro!</div>";
 
                             <div class="mb-3">
                                 <label for="cod_marca" class="col-form-label">Marca</label>
-                                <input type="text" name="cod_marca" class="form-control" id="cod_marca" placeholder="NºMarca" autocomplete="off">
+                                <select name="cod_marca" id="cod_marca" class="form-control">
+                                <?php
+                                $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
+                                $result = "SELECT * FROM marcas";
+                                $result = $pdo->prepare($result);
+                                $result->execute();
+
+                                while($row_result = $result->fetch(PDO::FETCH_ASSOC)){ ?>
+                                <option value="<?php echo $row_result['Cod_marca']; ?>"><?php echo $row_result['Cod_marca']; ?>
+                                </option><?php
+                                }
+                                ?>
+
+
+                                </select>
+
                             </div>
 
                             <div class="mb-3">

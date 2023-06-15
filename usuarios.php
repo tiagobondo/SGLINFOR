@@ -127,29 +127,11 @@
         include_once "conexao.php";
 
         if(isset($_POST['acao'])){
-            if(empty(['Usuario'])){
+            if(empty($_POST['Usuario']) || empty($_POST['Senha']) || empty($_POST['Cod_cargo']) || empty($_POST['NomeCompleto']) || empty($_POST['Funcao']) || empty($_POST['Nºdocumento'])){
                 echo "<div class='alert alert-danger' role='alert' >Campos obrigatorio!</div>";
 
             }
-             if(empty(['Senha'])){ 
-                echo "<div class='alert alert-danger' role='alert' >Campos obrigatorio!</div>";
-
-             }
-                if(empty(['Cod_cargo'])){
-                    echo "<div class='alert alert-danger' role='alert' >Campos obrigatorio!</div>";
-
-                }
-                if(empty(['NomeCompleto'])){
-                    echo "<div class='alert alert-danger' role='alert' >Campos obrigatorio!</div>";
-
-                }
-                 if(empty(['Funcao'])){
-                    echo "<div class='alert alert-danger' role='alert' >Campos obrigatorio!</div>";
-
-                 }
-                 if( empty(['Nºdocumento'])){
-                echo "<div class='alert alert-danger' role='alert' >Campos obrigatorio!</div>";
-                }
+                
             else{
                  //Recebendo os dados apartir do metodo post
             $Usuario = $_POST['Usuario'];
@@ -174,8 +156,8 @@ if($sql->execute(array($Usuario, $Senha, $Cod_cargo, $DataRegisto,  $NomeComplet
             }
 
            
+      
         }
-    
     ?>
 
     <!--PHP De Insercão dos dados na tabela-->

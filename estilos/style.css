@@ -60,10 +60,15 @@ body{
     display: block;
     color: white;
     height: 50px;
-    font-size: 1.3em;
-    
-    
+    font-size: 1.3em;  
    
+}
+
+.TimeNav{
+    padding: 10px;
+    color: white;
+    font-size: 1.3em; 
+
 }
 
 .Painel{
@@ -76,6 +81,7 @@ body{
 }
 
 #NavIcon{
+    
     
 }
 
