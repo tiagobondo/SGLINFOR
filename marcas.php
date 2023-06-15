@@ -54,9 +54,16 @@
                     <h4>Marcas</h4>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#CadMarcaModal">
+                    <?php if($_SESSION['Funcao']=='Professor'){
+                        echo " <button type='button' class='btn btn-outline-success' data-bs-toggle='modal' data-bs-target='#CadMarcaModal'>
                         Cadastrar
-                    </button>
+                    </button>";
+
+                    }
+                    else{
+                        
+                    } ?>
+                   
 
                 </div>
 

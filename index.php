@@ -1,5 +1,4 @@
 <?php
-    sleep(2);
     include_once('conexao.php');
 
     if(isset($_POST['acao2'])){
@@ -29,7 +28,7 @@
             
         }
         else{
-            sleep(9);
+           
             $erro_login = "Usuário ou Senha incorretos!";
 
         }

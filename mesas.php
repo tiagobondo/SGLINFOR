@@ -56,9 +56,15 @@
                     <h4>Mesas</h4>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#CadMesaModal">
+                    <?php if($_SESSION['Funcao']=='Professor'){
+                        echo"<button type='button' class='btn btn-outline-success' data-bs-toggle='modal' data-bs-target='#CadMesaModal'>
                         Cadastrar
-                    </button>
+                    </button>";
+                    }
+                    else{
+                        
+                    }?>
+                    
 
                 </div>
 
@@ -98,10 +104,10 @@
                         <dt class="col-sm-3">Nome</dt>
                         <dd class="col-sm-9"><span id="Nome"></span></dd>
 
-                        <dt class="col-sm-3">NºComputadores</dt>
+                        <dt class="col-sm-3">Computadores  </dt>
                         <dd class="col-sm-9"><span id="NºComputadores"></span></dd>
 
-                        <dt class="col-sm-3">NºAlunos</dt>
+                        <dt class="col-sm-3">Alunos</dt>
                         <dd class="col-sm-9"><span id="NºAlunos"></span></dd>
 
                         <dt class="col-sm-3">Observacao</dt>

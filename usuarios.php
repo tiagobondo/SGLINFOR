@@ -54,9 +54,15 @@
                     <h4>Usuários</h4>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#CadUserModal">
+                    <?php if($_SESSION['Funcao'] =='Professor'){
+                        echo "<button type='button' class='btn btn-outline-success' data-bs-toggle='modal' data-bs-target='#CadUserModal'>
                         Cadastrar
-                    </button>
+                    </button>";
+                    } 
+                    else{
+
+                    }?>
+                    
 
                 </div>
 

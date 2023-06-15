@@ -1,7 +1,7 @@
-
 <?php
     include_once("protect.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -26,12 +26,14 @@
 
 <p class="TituloUsuario"><?php echo $_SESSION['Funcao']; ?></p>
 <p class="linhaHorizontal">______________________________</p>
-    <a href="materias.php" class="linkNav" >  <i class="fa fa-tools" id="NavIcon"></i> Materias </a>
-    <a href="estatistica.php" class="linkNav"> <i class="fa fa-line-chart" id="NavIcon"></i> Estatística </a>
-    <a href="usuarios.php" class="linkNav"> <i class="fa fa-users" id="NavIcon"></i> Contas </a>
-    <a href="acerca.php" class="linkNav"> <i class="fa fa-info" id="NavIcon"></i> Acerca </a>
-    <a href="#" class="linkNav" onclick="abrirModal()"> <i class="fa fa-computer" id="NavIcon"></i> Dados</a>
-    <a href="sair.php" class="linkNav"> <i class="fa fa-outdent" id="NavIcon"></i> Sair </a>
+<p class="TituloHora"><i class="fa fa-calendar" id="NavIconCalendary"></i>12/06/2023</p>
+    <a href="materias.php" class="linkNav" >  <i class="fa fa-tools" id="NavIcon1"></i> Materias </a>
+    <a href="estatistica.php" class="linkNav"> <i class="fa fa-line-chart" id="NavIcon2"></i> Estatística </a>
+    <a href="usuarios.php" class="linkNav"> <i class="fa fa-users" id="NavIcon3"></i> Contas </a>
+    <a href="acerca.php" class="linkNav"> <i class="fa fa-info" id="NavIcon4"></i> Acerca </a>
+    <a href="#" class="linkNav" onclick="abrirModal()"> <i class="fa fa-computer" id="NavIcon5"></i> Dados</a>
+    <a href="sair.php" class="linkNav"> <i class="fa fa-outdent" id="NavIcon6"></i> Sair </a>
+   
 
     
     <div class="janela-modal" id="janela-modal">
@@ -45,6 +47,7 @@
         </div>
         
     </div>
+    
 </nav>
 
 
@@ -57,9 +60,16 @@
                     <h4>Materias</h4>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#CadMaterialModal">
+                    <?php if($_SESSION['Funcao'] =='Professor'){
+                        echo "<button type='button' class='btn btn-outline-success' data-bs-toggle='modal' data-bs-target='#CadMaterialModal'>
                         Cadastrar
-                    </button>
+                    </button>";
+
+                    } 
+                    else{
+                        
+                    }?>
+                    
 
                 </div>
 
