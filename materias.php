@@ -32,6 +32,12 @@
     <a href="acerca.php" class="linkNav"> <i class="fa fa-info" id="NavIcon"></i> Acerca </a>
     <a href="#" class="linkNav" onclick="abrirModal()"> <i class="fa fa-computer" id="NavIcon"></i> Dados</a>
     <a href="sair.php" class="linkNav"> <i class="fa fa-outdent" id="NavIcon"></i> Sair </a>
+    <h6 class="dataEstatistica"><?php
+            date_default_timezone_set('Africa/Luanda');
+            $data = date('Y-m-d');
+            echo $data;
+        
+        ?></h6>
     
     <div class="janela-modal" id="janela-modal">
     <div class="modal1">
