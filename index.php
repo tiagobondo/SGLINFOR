@@ -14,7 +14,7 @@
 
         $user = $sql->fetch(PDO::FETCH_ASSOC);
         if($user){
-            sleep(3);
+            sleep(1);
             if(!isset($_SESSION)){
                 session_start();
             }
@@ -51,7 +51,6 @@
         $sql->execute(array($Id,$Ndocumento));
         $user = $sql->fetch(PDO::FETCH_ASSOC);
         if($user){
-            sleep(9);
             if(!isset($_SESSION)){
                 session_start();
             }
@@ -65,7 +64,6 @@
             
         }
         else{
-            sleep(2);
             $erro_login = "Erro na verificação!";
 
         }

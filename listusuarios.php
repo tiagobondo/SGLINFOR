@@ -21,14 +21,12 @@ if($_SESSION['Funcao'] =='Professor'){
                 <thead>
                         <tr>
                         <th>Nº</th> 
-                        <th>Usuário</th> 
-                        <th>Senha</th> 
                         <th>Cargo</th>
                         <th>Data</th> 
                         <th>Nome completo</th> 
                         <th>Função</th> 
                         <th>Portador do BI</th> 
-                        <th>_____________Ações___________</th>
+                        <th>Ação</th>
                         </tr>
                 </thead>
                 <tbody>";
@@ -38,16 +36,12 @@ if($_SESSION['Funcao'] =='Professor'){
 
         $dados .="<tr>
                     <td>$Id</td>
-                    <td>$Usuario</>
-                    <td>$Senha</td>
                     <td>$Cod_cargo</td>
                     <td >$DataRegisto</td>
                     <td >$NomeCompleto</td>
                     <td >$Funcao</td>
                     <td >$Nºdocumento</td>
                 <td> 
-                <button id='$Id' class='btn btn-outline-primary btn-sm ' onclick='VisualizarDados($Id)'>Visualizar</button> 
-                <button id='$Id' class='btn btn-outline-warning btn-sm' onclick='editarUsuariosDados($Id)'>Editar</button>
                 <a href='apagarusuarios.php?Id=$Id' id='$Id' class='btn btn-outline-danger btn-sm'>Apagar</a>
                 </td>
 

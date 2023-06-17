@@ -26,7 +26,7 @@
 
 <p class="TituloUsuario"><?php echo $_SESSION['Funcao']; ?></p>
 <p class="linhaHorizontal">______________________________</p>
-<p class="TituloHora"><i class="fa fa-calendar" id="NavIconCalendary"></i>12/06/2023</p>
+<p class="TituloData"><?php date_default_timezone_set('Africa/Luanda'); $data = date('Y-m-d'); echo $data; ?></p>
     <a href="materias.php" class="linkNav" >  <i class="fa fa-tools" id="NavIcon1"></i> Materias </a>
     <a href="estatistica.php" class="linkNav"> <i class="fa fa-line-chart" id="NavIcon2"></i> Estatística </a>
     <a href="usuarios.php" class="linkNav"> <i class="fa fa-users" id="NavIcon3"></i> Contas </a>

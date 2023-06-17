@@ -1,6 +1,6 @@
 <style>
 
-    h2{
+    .TituloProtec{
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
     }
@@ -14,8 +14,7 @@
     }
 
     if(!isset($_SESSION['Id'])){
-        sleep(2);
-        die("<h2>Você precisa estar logado para acessar está página!</h2><p><a href=\"index.php\" >Login</a></p>");
+        die("<h2 class='TituloProtec'>Você precisa estar logado para acessar está página!</h2><p><a href=\"index.php\" >Login</a></p>");
         
     }
 ?>
