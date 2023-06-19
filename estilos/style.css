@@ -58,6 +58,7 @@ body{
     color: white;
     height: 50px;
     font-size: 1.3em;  
+    padding: 5px;
    
 }
 
@@ -78,45 +79,37 @@ body{
 }
 
 #NavIconCalendary{
+    color: white;
     font-size: 3em; 
     text-align: center; 
-    margin-bottom: 10px;
+
 }
+
+
 
 
 #NavIcon1{
-    padding: 10px;  
+    padding: 5px;  
 }
 
 #NavIcon2{
-    
-   
-    
-    
+    padding: 5px;    
 }
 
 #NavIcon3{
-    
-    
-    
+    padding: 5px;
 }
 
 #NavIcon4{
-    
-    
-    
+    padding: 5px;   
 }
 
 #NavIcon5{
-    
-    
-    
+    padding: 5px;  
 }
 
 #NavIcon6{
-    
-    
-    
+    padding: 5px;   
 }
 
 .linkNav:hover{
@@ -157,6 +150,13 @@ header{
     color: white;
     font-weight: bolder;
     margin-bottom: 15px;
+}
+
+.HoraSistema{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
 
