@@ -96,7 +96,6 @@
                     <h5 class="modal-title" id="visMesaModalLabel">Detalhes da Mesa</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                 </div>
-
                 <div class="modal-body">
                     <dl class="row">
                         <dt class="col-sm-3">Codigo Mesa</dt>
@@ -113,7 +112,6 @@
 
                         <dt class="col-sm-3">Observacao</dt>
                         <dd class="col-sm-9"><span id="Observacao"></span></dd>
-
                     </dl>    
                     
                 </div>
@@ -121,7 +119,6 @@
             </div>
 
         </div>
-
     </div>
     <!--Fim  de modal Visualizar  -->
     

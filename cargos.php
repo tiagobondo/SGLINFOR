@@ -109,6 +109,7 @@
 
     </div>
     <!--Fim  de modal Visualizar  -->
+
     
     <!--Janela Modal CadModal -->
     <!--PHP De Insercão dos dados na tabela-->

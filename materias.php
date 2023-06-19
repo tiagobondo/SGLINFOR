@@ -72,6 +72,37 @@
                     
 
                 </div>
+                <div>
+                    <?php if($_SESSION['Funcao'] =='Professor'){
+                        echo "<button type='button' class='btn btn-outline-danger' data-bs-toggle='modal' data-bs-target='#Confirm'>
+                        Apagar todos os dados
+                    </button>";
+
+                    } 
+                    else{
+                        
+                    }?>
+                    
+
+                </div>
+                <div class="modal fade" id="Confirm" tabindex="-1" aria-labelledby="ConfirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ConfirmModalLabel">Pretendes apagar todos os dados?</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post">
+                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-dismiss="modal">Não</button>
+                <input type="submit" class="btn btn-outline-warning btn-sm" value="Sim" id="Cad-material-btn" name="EliminarTudo"/>         
+                </div>
+                </form>
+                
+
+            </div>
+
+        </div>
+    </div>
 
             </div>
         </div>
@@ -143,6 +174,25 @@
 
     </div>
     <!--Fim  de modal Visualizar  -->
+
+    <!--Modal Apagar Todos os dados-->
+    <?php
+            if(isset($_POST['EliminarTudo'])){
+                include_once('conexao.php');
+
+                $sql= $pdo->prepare("DELETE FROM `materias`");
+
+                if($sql->execute()){
+                    echo "<div class='alert alert-success' role='alert' >Todos os dados apagado!</div>";
+                }
+                else{
+                    echo "<div class='alert alert-danger' role='alert' >Falha ao apagar todos os dados!</div>";
+
+                }
+            }
+    ?>
+
+     <!--Fim Modal apagar Todos os dados-->
     
     <!--Janela Modal CadModal -->
     <!--PHP De Insercão dos dados na tabela-->
