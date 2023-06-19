@@ -545,50 +545,7 @@ header{
     background-color: rgb(26,32,40);
 }
 
-.Linkntrar{
-    text-decoration: none;
-    padding: 10px;
-    padding-left: 90px;
-    padding-right: 90px;
-    color: white;
-    background-color:#0454a0;
-    font-weight: bolder;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    transition: 0.5s; 
-    margin-left: 30%; 
-    font-size: 1.5em;
-   
-}
 
-.Linkntrar:hover{
-    background-color: #0084ff5d;
-
-}
-
-.Linkntrar:active{
-    background-color: #0569165d;
-
-}
-
-.TituloProtect{
-    margin-bottom: 90px;
-    padding: 25px;
-    color: white;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.233);
-}
-
-
-#DivProtect{
-    margin: auto;
-    border: 1px solid rgba(255, 255, 255, 0.233);
-    width:700px;
-    height: 250px;
-    border-radius: 10px ;
-    
-}
 
 
 
