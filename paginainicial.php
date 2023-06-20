@@ -50,7 +50,7 @@
 </nav>
 
 
-    <article class="article">
+    <article class="articlePagina">
        
    
 
