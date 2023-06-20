@@ -184,7 +184,7 @@ if($sql->execute(array($Usuario, $Senha, $Cod_cargo, $DataRegisto,  $NomeComplet
         $Ndocumento1 = filter_input(INPUT_POST, 'Ndocumento1', FILTER_SANITIZE_STRING);
 
         if(empty($_POST['Usuario1']) || empty($_POST['Senha1']) || empty($_POST['Cod_cargo1']) || empty($_POST['NomeCompleto1']) || empty($_POST['Funcao1']) || empty($_POST['Ndocumento1'])){
-            echo "<div class='alert alert-danger'>Campos obrigatórios!</div>";
+            echo "<div class='alert alert-danger'>Não tens acesso!</div>";
 
         }
         else{
@@ -252,7 +252,7 @@ if($sql->execute(array($Usuario, $Senha, $Cod_cargo, $DataRegisto,  $NomeComplet
                                 <select name="Cod_cargo" id="iCod_cargo" class="form-control">
                                 <?php
                                 $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
-                                $result_cargos = "SELECT * FROM cargos";
+                                $result_cargos = "SELECT * FROM cargos Order by Cod_cargo DESC";
                                 $result_cargos = $pdo->prepare($result_cargos);
                                 $result_cargos->execute();
 
