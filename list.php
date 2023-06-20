@@ -3,7 +3,7 @@
 session_start();
 
 include_once "conexao.php";
-    if($_SESSION['Cod_cargo'] =='Professor'){
+    if($_SESSION['Funcao'] =='Professor'){
 
     $pagina = filter_input(INPUT_GET,"pagina",FILTER_SANITIZE_NUMBER_INT);
 
