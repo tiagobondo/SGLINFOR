@@ -105,7 +105,6 @@ else{
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
-                        <th>Nº</th> 
                         <th>Cargo</th>
                         <th>Data</th>
                         <th>Ação</th>
@@ -117,7 +116,6 @@ else{
         extract($row_materias);
 
         $dados .="<tr>
-                    <td>$Cod_cargo</td>
                     <td>$Nome</>
                     <td>$DataRegisto</td>
                 <td> 

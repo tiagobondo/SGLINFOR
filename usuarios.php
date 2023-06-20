@@ -250,7 +250,6 @@ if($sql->execute(array($Usuario, $Senha, $Cod_cargo, $DataRegisto,  $NomeComplet
                             <div class="mb-3">
                                 <label for="iCod_cargo" class="col-form-label">Cargo</label>
                                 <select name="Cod_cargo" id="iCod_cargo" class="form-control">
-                                    <option></option>
                                 <?php
                                 $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
                                 $result_cargos = "SELECT * FROM cargos";
