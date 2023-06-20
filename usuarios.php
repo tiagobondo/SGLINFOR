@@ -333,8 +333,7 @@ if($sql->execute(array($Usuario, $Senha, $Cod_cargo, $DataRegisto,  $NomeComplet
                             </div>
 
                             <div class="mb-3">
-                                <label for="Cod_cargo1" class="col-form-label">Cargo</label>
-                                <input type="text" name="Cod_cargo1" class="form-control" id="editCod_cargo" placeholder="NºCargo" autocomplete="off">
+                                <input type="hidden" name="Cod_cargo1" id="editCod_cargo">
                             </div>
 
 
