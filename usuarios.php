@@ -206,7 +206,7 @@ if($sql->execute(array($Usuario, $Senha, $Cod_cargo, $DataRegisto,  $NomeComplet
      echo "<div class='alert alert-success'>Dados Actualizado Com Sucesso!</div>";
 
      }else{
-     echo "<div class='alert alert-danger'>Houve um erro!</div>";
+     echo "<div class='alert alert-danger'>Não tens acesso!</div>";
 
      }    
 

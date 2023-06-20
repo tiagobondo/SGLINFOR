@@ -16,7 +16,7 @@ listarUsuarios(1);
 async function VisualizarDados(Id) {
     const dados = await fetch('visusuarios.php?Id=' + Id);
     const resposta = await dados.json();
-   // console.log(resposta);
+   //console.log(resposta);
 
    if (resposta['erro']) {
 

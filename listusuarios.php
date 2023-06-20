@@ -39,7 +39,9 @@ if($_SESSION['Funcao'] =='Professor'){
                     <td >$NomeCompleto</td>
                     <td >$Funcao</td>
                     <td >$Nºdocumento</td>
-                <td> 
+                <td>
+                <button id='$Id' class='btn btn-outline-primary btn-sm ' onclick='VisualizarDados($Id)'>Visualizar</button>  
+                <button id='$Id' class='btn btn-outline-warning btn-sm' onclick='editarUsuariosDados($Id)'>Editar</button>
                 <a href='apagarusuarios.php?Id=$Id' id='$Id' class='btn btn-outline-danger btn-sm'>Apagar</a>
                 </td>
 

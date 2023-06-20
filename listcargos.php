@@ -107,10 +107,8 @@ else{
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
-                        <th>Nº</th>
                         <th>Cargo</th>
                         <th>Data</th>
-                        <th>Ação</th>
                         </tr>
                 </thead>
                 <tbody>";
@@ -119,13 +117,8 @@ else{
         extract($row_materias);
 
         $dados .="<tr>
-                    <td>$Cod_cargo</>
                     <td>$Nome</>
                     <td>$DataRegisto</td>
-                <td> 
-                <button id='$Cod_cargo' class='btn btn-outline-primary btn-sm ' onclick='VisualizarDados($Cod_cargo)'>Visualizar</button> 
-                </td>
-
                 </tr>" ;  
     }
 
