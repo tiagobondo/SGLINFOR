@@ -1,5 +1,6 @@
 <?php
     include_once('conexao.php');
+    
 
     if(isset($_POST['acao2'])){
         if(empty($_POST['usuario']) or empty($_POST['senha'])){
@@ -66,6 +67,7 @@
             $_SESSION['Usuario'] = $user['Usuario'];
             $_SESSION['Funcao'] = $user['Funcao'];
             $_SESSION['NomeCompleto'] = $user['NomeCompleto'];
+           
             
             header("location: estatistica.php");
             

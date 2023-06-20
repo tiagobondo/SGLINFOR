@@ -9,7 +9,6 @@ $Cod_material = filter_input(INPUT_GET, "Cod_material",FILTER_SANITIZE_NUMBER_IN
         $query_material = "DELETE FROM materias WHERE Cod_material=:Cod_material";
         $result_material = $pdo->prepare($query_material);
         $result_material->bindParam('Cod_material',$Cod_material);
-        
 
         if($result_material->execute()){
             sleep(1);
