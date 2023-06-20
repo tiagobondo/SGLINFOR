@@ -7,7 +7,9 @@
    
    
 </style>
-
+<head>
+<link rel="shortcut icon" href="./imagens//LogSGLINFOR.png" type="image/x-icon">
+</head>
 <?php
      if(!isset($_SESSION)){
         session_start();
