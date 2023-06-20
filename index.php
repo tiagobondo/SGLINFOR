@@ -23,6 +23,7 @@
             $_SESSION['Usuario'] = $user['Usuario'];
             $_SESSION['Funcao'] = $user['Funcao'];
             $_SESSION['NomeCompleto'] = $user['NomeCompleto'];
+             $_SESSION['NomeCompleto'] = $user['NomeCompleto'];
             
             header("location: estatistica.php");
             
