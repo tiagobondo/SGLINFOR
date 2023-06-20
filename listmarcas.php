@@ -110,7 +110,7 @@ include_once "conexao.php";
                             <th>Nº</th> 
                             <th>Marca</th> 
                             <th>Data</th> 
-                            <th>Ações</th>
+                            <th>Ação</th>
                             </tr>
                     </thead>
                     <tbody>";

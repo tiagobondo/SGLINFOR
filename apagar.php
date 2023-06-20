@@ -12,7 +12,7 @@ $Cod_material = filter_input(INPUT_GET, "Cod_material",FILTER_SANITIZE_NUMBER_IN
         
 
         if($result_material->execute()){
-            sleep(2);
+            sleep(1);
             $msg="<div class='alert alert-success'>Apagado Com sucesso!</div>";
             header("Location: materias.php");
             $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert' >Apagado com sucesso! </div>"];

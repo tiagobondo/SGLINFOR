@@ -127,7 +127,7 @@ else{
                         <th>Processador</th> 
                         <th>RAM</th> 
                         <th>Data</th> 
-                        <th>Ações</th>
+                        <th>Ação</th>
                         </tr>
                 </thead>
                 <tbody>";

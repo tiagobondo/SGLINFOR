@@ -14,7 +14,7 @@ $Cod_cargo = filter_input(INPUT_GET, "Cod_cargo",FILTER_SANITIZE_NUMBER_INT);
         if($result_mesa->execute()){
             sleep(2);
             $msg="<div class='alert alert-success'>Apagado Com sucesso!</div>";
-            header("Location: cargos.php");
+            header("Location:cargos.php");
             $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert' >Apagado com sucesso! </div>"];
           
             
