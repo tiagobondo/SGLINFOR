@@ -46,6 +46,14 @@
         $Id = filter_input(INPUT_POST, 'Id', FILTER_SANITIZE_NUMBER_INT);
         $Ndocumento = filter_input(INPUT_POST, 'Ndocumento', FILTER_SANITIZE_STRING);
 
+        if(empty($_POST['Id'])){
+            echo $erro_login = "Necesário preencher o nº da conta!";
+        }
+        elseif(empty($_POST['Ndocumento'])){
+            echo $erro_login = "Necesário preencher o portador do BI!";
+        }
+        else{
+
         //Inserindo os dados no Banco de Dados
         $sql = $pdo->prepare("SELECT * FROM `usuarios` WHERE Id = ? AND Nºdocumento = ? LIMIT 1");
         $sql->execute(array($Id,$Ndocumento));
@@ -67,6 +75,7 @@
             $erro_login = "Erro na verificação!";
 
         }
+    }
 
         
 
@@ -154,7 +163,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
-                                <input type="submit" class="btn btn-outline-success btn-sm" value="Cadastrar" id="Cad-cargo-btn" name="SendRectCont"/>
+                                <input type="submit" class="btn btn-outline-success btn-sm" value="Verificar" id="Cad-cargo-btn" name="SendRectCont"/>
                             </div>
 
 

@@ -12,9 +12,9 @@ $Cod_cargo = filter_input(INPUT_GET, "Cod_cargo",FILTER_SANITIZE_NUMBER_INT);
         $result_cargo->bindParam('Cod_cargo',$Cod_cargo);
         
 
-        if($result_cargos->execute()){
-            header("Location: cargos.php");
+        if($result_cargo->execute()){
             sleep(1);
+            header("Location: cargos.php");
             $msg="<div class='alert alert-success'>Cargo apagado Com sucesso!</div>";
             header("Location: cargos.php");
             $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert' >Cargo apagado com sucesso! </div>"];
