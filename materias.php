@@ -27,7 +27,7 @@
 
 <p class="TituloUsuario"><?php echo $_SESSION['Funcao']; ?></p>
 <p class="linhaHorizontal">______________________________</p>
-<p class="HoraSistema"><i class="fa fa-calendar" id="NavIconCalendary"></i><?php date_default_timezone_set('Africa/Luanda'); $data = date('d-m-Y'); echo $data; ?></p>
+<p class="HoraSistema"><i class="fa fa-calendar" id="NavIconCalendar"></i><?php date_default_timezone_set('Africa/Luanda'); $data = date('d-m-Y'); echo $data; ?></p>
     <a href="materias.php" class="linkNav" >  <i class="fa fa-tools" id="NavIcon1"></i> Materias </a>
     <a href="estatistica.php" class="linkNav"> <i class="fa fa-line-chart" id="NavIcon2"></i> Estatística </a>
     <a href="usuarios.php" class="linkNav"> <i class="fa fa-users" id="NavIcon3"></i> Contas </a>
@@ -383,7 +383,7 @@ echo "<div class='alert alert-danger'>Houve um erro!</div>";
 
                             <div class="mb-3">
                                 <label for="edicao" class="col-form-label">Edição</label>
-                                <input type="text" name="edicao" class="form-control" id="edicao" placeholder="Edição do windows" autocomplete="off">
+                                <input type="text" name="edicao" class="form-control" id="edicao" placeholder="Edição do windows (Pro)" autocomplete="off">
                             </div>
 
                             <div class="mb-3">
