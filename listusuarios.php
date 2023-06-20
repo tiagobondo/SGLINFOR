@@ -20,7 +20,6 @@ if($_SESSION['Funcao'] =='Professor'){
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
-                        <th>Nº</th> 
                         <th>Cargo</th>
                         <th>Data</th> 
                         <th>Nome completo</th> 
@@ -35,7 +34,6 @@ if($_SESSION['Funcao'] =='Professor'){
         extract($row_usuarios);
 
         $dados .="<tr>
-                    <td>$Id</td>
                     <td>$Cod_cargo</td>
                     <td >$DataRegisto</td>
                     <td >$NomeCompleto</td>

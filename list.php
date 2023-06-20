@@ -22,7 +22,6 @@ include_once "conexao.php";
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
-                        <th>Nº</th> 
                         <th>Material</th> 
                         <th>Estado</th> 
                         <th>Mesa</th> 
@@ -39,7 +38,6 @@ include_once "conexao.php";
         extract($row_materias);
 
         $dados .="<tr>
-                    <td>$Cod_material</td>
                     <td>$Nome</>
                     <td>$Estado</td>
                     <td>$Cod_mesa</td>
@@ -119,7 +117,6 @@ else{
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
-                        <th>Nº</th> 
                         <th>Material</th> 
                         <th>Estado</th> 
                         <th>Mesa</th> 
@@ -136,7 +133,6 @@ else{
         extract($row_materias);
 
         $dados .="<tr>
-                    <td>$Cod_material</td>
                     <td>$Nome</>
                     <td>$Estado</td>
                     <td>$Cod_mesa</td>
