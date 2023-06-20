@@ -18,6 +18,7 @@ $Cod_cargo = filter_input(INPUT_GET, "Cod_cargo",FILTER_SANITIZE_NUMBER_INT);
         else{
             $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro: Houve Um erro! </div>"];
             header("Location: cargos.php");
+            
         }
      }
 

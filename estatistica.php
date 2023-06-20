@@ -46,10 +46,10 @@
 <body>
 
     <article class="articleConteudos">
-        <h2>Estatística</h2>
+        <h4>Estatística</h4>
        
             <article class="articleEstatistica" id="EstatisticaBomEstado">
-                <h4 class="Titulo" > Bom estado</h4><i class="fa fa-check" id="IconBom"></i>
+                <h5 class="Titulo" >Materias em bom estado</h5><i class="fa fa-check" id="IconBom"></i>
                 <h3 class="Quantidade">
                 <?php
                                   $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
@@ -69,7 +69,7 @@
         
             </article>
             <article class="articleEstatistica" id="EstatisticaMauEstado">
-                <h4 class="Titulo" >Mau estado</h4><i class="fa fa-multiply" id="IconMau"></i>
+                <h5 class="Titulo" >Materias em mau estado</h5><i class="fa fa-multiply" id="IconMau"></i>
                 <h3 class="Quantidade">
                 <?php
                                   $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
@@ -87,7 +87,7 @@
             </article>
             <article class="articleEstatistica" id="EstatisticaMaterial">
             <i class="fa fa-tools" id="IconMaterial"></i>
-                <h4 class="Titulo">Materias</h4>
+                <h5 class="Titulo">Total de materias</h5>
                 <h3 class="Quantidade">
                 <?php
                                   $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
@@ -104,7 +104,7 @@
         
             </article>
             <article class="articleEstatistica" id="EstatisticaMarcas">
-                <h4 class="Titulo" >Marcas</h4><i class="fa fa-clipboard" id="IconMarcas"></i>
+                <h5 class="Titulo" >Diferentes marcas</h5><i class="fa fa-clipboard" id="IconMarcas"></i>
                 <h3 class="Quantidade">
                 <?php
                                  $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
@@ -123,7 +123,7 @@
             </article>
 
             <article class="articleEstatistica" id="EstatisticaMesas">
-                <h4 class="Titulo">Mesas</h4><i class="fa fa-table" id="IconMesas"></i>
+                <h5 class="Titulo">Total de mesas</h5><i class="fa fa-table" id="IconMesas"></i>
                 <h3 class="Quantidade">
                 <?php
                                   $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
@@ -141,7 +141,7 @@
             </article>
 
             <article class="articleEstatistica" id="EstatisticaUsuarios">
-                <h4 class="Titulo">Usuários</h4><i class="fa fa-users" id="IconUsers"></i>
+                <h5 class="Titulo">Total de usuários</h5><i class="fa fa-users" id="IconUsers"></i>
                 <h3 class="Quantidade">
                 <?php
                                   $pdo = new PDO('mysql:host=localhost;dbname=labinfor','root','');
@@ -157,6 +157,8 @@
                 </h3>
         
             </article>
+
+            
             
             <h6 class="dataEstatistica"><?php
             date_default_timezone_set('Africa/Luanda');
