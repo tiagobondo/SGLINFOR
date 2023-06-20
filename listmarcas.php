@@ -20,6 +20,7 @@ include_once "conexao.php";
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
+                        <th>Nº</th> 
                         <th>Marca</th> 
                         <th>Data</th> 
                         <th>Ações</th>
@@ -31,6 +32,7 @@ include_once "conexao.php";
         extract($row_mesas);
 
         $dados .="<tr>
+                    <td>$Cod_marca</td>
                     <td>$Nome</td>
                     <td>$DataRegisto</td>
                 <td> 

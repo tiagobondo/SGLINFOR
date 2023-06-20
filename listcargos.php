@@ -21,6 +21,7 @@ if($_SESSION['Funcao']=='Professor'){
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
+                        <th>Nº</th>
                         <th>Cargo</th>
                         <th>Data</th>
                         <th>Ações</th>
@@ -32,6 +33,7 @@ if($_SESSION['Funcao']=='Professor'){
         extract($row_materias);
 
         $dados .="<tr>
+                    <td>$Cod_cargo</>
                     <td>$Nome</>
                     <td>$DataRegisto</td>
                 <td> 
@@ -105,6 +107,7 @@ else{
             <table class='table table-striped table-bordered'>
                 <thead>
                         <tr>
+                        <th>Nº</th>
                         <th>Cargo</th>
                         <th>Data</th>
                         <th>Ação</th>
@@ -116,6 +119,7 @@ else{
         extract($row_materias);
 
         $dados .="<tr>
+                    <td>$Cod_cargo</>
                     <td>$Nome</>
                     <td>$DataRegisto</td>
                 <td> 
