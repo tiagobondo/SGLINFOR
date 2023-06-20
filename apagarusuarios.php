@@ -15,7 +15,7 @@ $Id = filter_input(INPUT_GET, "Id",FILTER_SANITIZE_NUMBER_INT);
             
     
             if($result_usuarios->execute()){
-                sleep(2);
+                sleep(1);
                 $msg="<div class='alert alert-success'>Apagado Com sucesso!</div>";
                 header("Location: usuarios.php");
                 $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert' >Apagado com sucesso! </div>"];
