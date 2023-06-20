@@ -13,14 +13,14 @@ $Cod_material = filter_input(INPUT_GET, "Cod_material",FILTER_SANITIZE_NUMBER_IN
 
         if($result_material->execute()){
             sleep(1);
-            $msg="<div class='alert alert-success'>Apagado Com sucesso!</div>";
+            $msg="<div class='alert alert-success'>Material apagado Com sucesso!</div>";
             header("Location: materias.php");
-            $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert' >Apagado com sucesso! </div>"];
+            $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert' >Material apagado com sucesso! </div>"];
             
 
         }
         else{
-            $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro: Houve Um erro com sucesso! </div>"];
+            $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro: Houve Um erro! </div>"];
 
         }
      }
