@@ -23,14 +23,14 @@ $Cod_mesa = filter_input(INPUT_GET, "Cod_mesa",FILTER_SANITIZE_NUMBER_INT);
         }
         else{
             $_SESSION['msg'] = "<p style='color: green;'>Mesa apagado com sucesso!</p>";
-           
+            header("Location: mesas.php");
 
         }
      }
 
     else{
         $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro:Nenhum encontrado! </div>"];
-        
+        header("Location: mesas.php");
 
     }
 

@@ -25,14 +25,14 @@ $Id = filter_input(INPUT_GET, "Id",FILTER_SANITIZE_NUMBER_INT);
             }
             else{
                 $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro: Houve Um erro com sucesso! </div>"];
-               
+                header("Location: usuarios.php");
     
             }
          }
     
         else{
             $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro:Nenhum encontrado! </div>"];
-            
+            header("Location: usuarios.php");
     
         }
     

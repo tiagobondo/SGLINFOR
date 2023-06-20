@@ -20,13 +20,13 @@ $Cod_material = filter_input(INPUT_GET, "Cod_material",FILTER_SANITIZE_NUMBER_IN
         }
         else{
             $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro: Houve Um erro! </div>"];
-
+            header("Location: materias.php");
         }
      }
 
     else{
         $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro:Nenhum encontrado! </div>"];
-
+        header("Location: materias.php");
     }
 
   

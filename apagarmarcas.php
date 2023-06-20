@@ -23,14 +23,14 @@ $Cod_marca = filter_input(INPUT_GET, "Cod_marca",FILTER_SANITIZE_NUMBER_INT);
         }
         else{
             $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro: Houve Um erro com sucesso! </div>"];
-           
+            header("Location:marcas.php");
 
         }
      }
 
     else{
         $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert' >Erro:Nenhum encontrado! </div>"];
-        
+        header("Location:marcas.php");
 
     }
 
