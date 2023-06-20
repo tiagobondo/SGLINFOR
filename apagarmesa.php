@@ -14,15 +14,15 @@ $Cod_mesa = filter_input(INPUT_GET, "Cod_mesa",FILTER_SANITIZE_NUMBER_INT);
         
 
         if($result_mesa->execute()){
-            sleep(2);
+            sleep(1);
             header("Location: mesas.php");
-            $_SESSION['msg'] = "<p style='color: green;'>Usuário apagado com sucesso!</p>";
+            $_SESSION['msg'] = "<p style='color: green;'>Mesa apagado com sucesso!</p>";
           
             
 
         }
         else{
-            $_SESSION['msg'] = "<p style='color: green;'>Usuário apagado com sucesso!</p>";
+            $_SESSION['msg'] = "<p style='color: green;'>Mesa apagado com sucesso!</p>";
            
 
         }
