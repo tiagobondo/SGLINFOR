@@ -17,7 +17,7 @@
 
 <body class="articlePaginaInicial">
 <header>
-        <p class="NomeSistema">Sistema de Gestão do Laboratório de Informática</p>
+        <p class="NomeSistema">Sistema de Gestão do Laboratório de Informática <img src="./imagens/./icons8_Source_Code_48px.png" alt=""></p>
         <p id="PUser"><?php echo $_SESSION['Usuario']; ?></p> <abbr title="<?php echo $_SESSION['NomeCompleto']; ?>"><img src="./icones//icons8_Male_User_50px.png" alt="" id="ImgUser"></abbr>
 
 </header>
