@@ -72,6 +72,9 @@ echo date('H:i'); ?></p>
         <mark>SGLINFOR</mark> levou se a execução como um trabalho de fim do ano na disciplina de TLP (Técnica e Linguagem de Programação) na orientação do Eng.Afonso Augusto Menata.
 
         </p>
+        <p>
+        Copyright (c) 2023 Tiago Bondo
+        </p>
     
    
     </article>
