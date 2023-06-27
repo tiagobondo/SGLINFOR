@@ -7,7 +7,7 @@ include_once "conexao.php";
 
     if(!empty($pagina)){
         //Calcular o inicio da visualização
-        $qnt_result_pg = 4; //Quantiadde de registro em cada pagina
+        $qnt_result_pg = 5; //Quantiadde de registro em cada pagina
         $inicio = ($pagina * $qnt_result_pg) - $qnt_result_pg;
 
     $query_mesas="SELECT * FROM `marcas` Order By Cod_marca DESC LIMIT $inicio,$qnt_result_pg ";
