@@ -150,6 +150,7 @@ header{
 }
 
 .HoraSistema{
+    padding: 5px;
     color: white;
     text-align: center;
     font-size: 1.5em;
